@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>林允皓的個人網站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--字型-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--字型-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"><!--字型-->
 	<style type="text/css">
-	.textClass {
-		color: #22dddd;
-		font-weight: bolder;
-		size: 50px;
 
-	}
-	#textID {
-		color: #D26900;
-		font-style: BERNHC.TTF;
-	}
-	</style>
-	<title>W01_Lab_0#40923118L</title>
+    header {
+        margin-top:50px;
+        background-color: blueviolet;
+    }
+
+    .p1 {
+        font-family: "Noto Sans TC", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        }/*字型*/
+    .p2 {
+        font-family: "Noto Sans TC", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        }/*內文字型*/
+    body {
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3C3C3C;
+        /*position: fixed;
+        top: 0;*/
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #005757;
+    }
+
+    .active {
+        background-color: #007979;
+    }
+
+    div {
+        width: 1000px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -150px 0 0 -500px;
+        background-color:#1abc9c;
+    }
+
+    </style>
+
 </head>
+
 <body>
-<div>
-	<h1 style="font size: 60px;font-style: Brush Script MT;">Image Hyperlink</h1>
-	<a href="https://global.topcon.com/"><img src="192460.jpg" style="width:427px;height:240px ;"></a>
-</div>
-
-<div>
-	<h1 style="font size: 60px;">Youtube Videos</h1>
-	<iframe src="https://youtu.be/4xX1A882lBU" width="100%" height="100%" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-</div>
-<div>
-	<h1 class="textClass">Rainbow-color Words</h1>
-	<p id="textID" >National Taiwan Normal University</p>
-</div>
+    <header>
+        <h2 class="p1" style="text-align:center;font-size:80px ;">林允皓的個人網站</h2>
+    </header>
+    <ul>
+        <li><a class="active" href="#home" style="font-size:20px; font-weight: 600">首頁</a></li>
+        <li><a href="#information"style="font-size:20px; font-weight: 600">基本資料及學經歷</a></li>
+        <li><a href="#habit"style="font-size:20px; font-weight: 600">興趣</a></li>
+        <li><a href="#more"style="font-size:20px; font-weight: 600">更多</a></li>
+    </ul>
+    <div style="padding:20px;margin-top:30px">
+        <h1>Fixed Top Navigation Bar</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+        <p class="p2">Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+        <p>Some text some text some text some text..</p>
+    
+    </div>
 </body>
 </html>
