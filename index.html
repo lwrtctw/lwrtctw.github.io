@@ -5,72 +5,104 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>林允皓的個人網站</title>
+    <link rel="shortcut icon" href="1L.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com"><!--字型-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--字型-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"><!--字型-->
 	<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
 
-    header {
-        margin-top:50px;
-        background-color: blueviolet;
+    body {
+        font-family: "Noto Sans TC", sans-serif;
+        margin: 0;
+
+    }   
+
+    .header {
+        background-color: #A3D1D1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background: #bebebe;  
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px; 
     }
 
     .p1 {
-        font-family: "Noto Sans TC", sans-serif;
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        }/*字型*/
+    }/*字型*/
     .p2 {
-        font-family: "Noto Sans TC", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
-        }/*內文字型*/
-    body {
-        margin: 0;
-    }
+    }/*內文字型*/
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #3C3C3C;
-        /*position: fixed;
-        top: 0;*/
-        width: 100%;
-    }
 
-    li {
+    .leftcolumn {
         float: left;
+        width: 50%;
+        
+        
     }
 
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
+    .rightcolumn {
+        float: left;
+        width: 50%;
+        
+    }   
+    
 
-        padding: 14px 16px;
-        text-decoration: none;
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+        
+    .button {
+        width: 80%;
+        height: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: relative;  
+        left:10%;
+
     }
 
-    li a:hover:not(.active) {
+    .parabu {
+        border: 5px;
+        font-weight: 5px;
+        font-size: 50px;
+        text-align: center; 
         background-color: #005757;
+        color: white;
+
+    }
+           
+    a:hover, a:visited, a:link, a:active {text-decoration: none;}
+        
+
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
     }
 
-    .active {
-        background-color: #007979;
-    }
-
-    div {
-        width: 1000px;
-        height: 300px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -150px 0 0 -500px;
-        background-color:#1abc9c;
+    
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
     }
 
     </style>
@@ -78,25 +110,40 @@
 </head>
 
 <body>
-    <header>
-        <h2 class="p1" style="text-align:center;font-size:80px ;">林允皓的個人網站</h2>
-    </header>
-    <ul>
-        <li><a class="active" href="#home" style="font-size:20px; font-weight: 600">首頁</a></li>
-        <li><a href="#information"style="font-size:20px; font-weight: 600">基本資料及學經歷</a></li>
-        <li><a href="#habit"style="font-size:20px; font-weight: 600">興趣</a></li>
-        <li><a href="#more"style="font-size:20px; font-weight: 600">更多</a></li>
-    </ul>
-    <div style="padding:20px;margin-top:30px">
-        <h1>Fixed Top Navigation Bar</h1>
-        <h2>Scroll this page to see the effect</h2>
-        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-        <p class="p2">Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
+    <div class="header">
+        <h2 class="p1" style="text-align:center;font-size:80px ;">歡迎來到我的網站！</h2>
+        
+    </div>
+    <div style=" background-color: #3C3C3C; height: 50px;">
+        <h2 class="p2" style="text-align:center;font-size:20px ;color: white; margin: 0px; padding-top: 10px;">點選以下按鈕以了解更多</h2>
+          
+    </div>
+    <div class="row">
+        <div class="leftcolumn"> 
+            <div class="button" >
+                <a href="#information"><h2 class="parabu">基本資料</h2></a>
+            </div>
+            <div class="button" >
+                <a href="#habit"><h2 class="parabu">興趣</h2></a>
+            </div>
+
+        </div>
+        <div class="rightcolumn"> 
+            <div class="button" >
+                <a href="#edu"><h2 class="parabu">學經歷</h2></a>
+            </div>
+            <div class="button">
+                <a href="#more"><h2 class="parabu">更多</h2></a>
+
+            </div>
+            
     
+
+        </div>   
+    </div>
+    
+    <div class="footer">© 2024 林允皓
+        
     </div>
 </body>
 </html>
