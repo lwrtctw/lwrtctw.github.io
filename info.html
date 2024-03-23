@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="1L.jpg">
+    <title>基本資料</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--字型-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--字型-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"><!--字型-->
+	<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Noto Sans TC", sans-serif;
+        margin: 0;
+    }   
+
+    .header {
+        background-color: #A3D1D1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background: #bebebe;  
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .p1 {
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }/*字型*/
+    .p2 {
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }/*內文字型*/
+
+
+    .leftcolumn {
+        float: left;
+        width: 40%;
+        margin-top: 40px;
+        
+    }
+
+    .rightcolumn {
+        float: left;
+        width: 60%;
+        margin-top: 40px;
+        
+        
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .parabu {
+        border: 5px;
+        font-weight: 5px;
+        text-align: center; 
+        color: white;
+    }
+           
+    .cen {
+        position: relative;  
+        left:25%;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3C3C3C;
+        /*position: fixed;
+        top: 0;*/
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #005757;
+    }
+
+    .active {
+        background-color: #007979;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="p1" style="text-align:center;font-size:80px ;">基本資料</h2>
+    </div>
+    <div>
+    <ul>
+        <li><a href="lwrtctw.github.io/index.html" style="font-size:20px; font-weight: 600">首頁</a></li>
+        <li><a class="active" href="lwrtctw.github.io/info.html"style="font-size:20px; font-weight: 600">基本資料</a></li>
+        <li><a href="lwrtctw.github.io/edu.html"style="font-size:20px; font-weight: 600">學經歷</a></li>
+        <li><a href="lwrtctw.github.io/int.html"style="font-size:20px; font-weight: 600">興趣</a></li>
+        <li><a href="lwrtctw.github.io/more.html"style="font-size:20px; font-weight: 600">更多</a></li>
+    </ul>
+    </div>
+    <div class="row">
+        <div class="leftcolumn"> 
+           <div>
+               <img src="206246.jpg" style="width:50%" class="cen">
+           </div>
+        </div> 
+        
+        <div class="rightcolumn"> 
+            
+            <div style="padding:10px;margin-top:10px">
+            <h1>林允皓</h1>
+            <h2 style="font-size:20px">國立臺灣師範大學地理學系大四學生</h2>
+        
+            <p class="p2" style="font-size:18px">　　22歲，出生於臺中縣，身分證字號開頭是絕版的L。住在烏日，就是有高鐵經過的那個烏日，家裡剛好離高鐵站很近，近到會去站內覓食。從國小到高中都在彰化市度過，也能接受別人說我是個彰化人。因此，我常跟別人說我在臺中生活，在彰化成長。<br>　　討厭雨天、討厭蒸的肉圓，蒸的肉圓只能叫它水晶餃==，炒麵要加東泉才能吃。但其實自己對吃的東西接受度還算高（前面出現的情況不算），大概是烏日沒什麼美食吧。
+  
+            </p>
+            </div>
+
+        </div>   
+    </div>
+    
+    
+    <div class="footer">© 2024 林允皓
+        
+    </div>
+</body>
+</html>
