@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="1L.jpg">
+    <title>興趣</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--字型-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--字型-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"><!--字型-->
+	<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Noto Sans TC", sans-serif;
+        margin: 0;
+    }   
+
+    .header {
+        background-color: #A3D1D1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background: #bebebe;  
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .p1 {
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }/*字型*/
+    .p2 {
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }/*內文字型*/
+
+
+    .leftcolumn {
+        float: left;
+        width: 40%;
+        height: 100%;
+        margin-top: 40px;
+        
+    }
+
+
+    .rightcolumn {
+        float: left;
+        width: 60%;
+        height: 100%;
+        margin-top: 40px;
+        
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+           
+    .cen {
+        position: relative;  
+        left:27%;
+    }
+
+    .box{
+        position: relative;
+
+    }
+
+    img {
+        border-radius: 20%;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3C3C3C;
+        /*position: fixed;
+        top: 0;*/
+        width: 100%;
+    }
+
+    ul.a {
+        list-style-type:square ;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #005757;
+    }
+
+    .active {
+        background-color: #007979;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="p1" style="text-align:center;font-size:80px ;">興趣</h2>
+    </div>
+    <div>
+    <ul>
+        <li><a href="index.html" style="font-size:20px; font-weight: 600">首頁</a></li>
+        <li><a href="info.html"style="font-size:20px; font-weight: 600">基本資料</a></li>
+        <li><a href="edu.html"style="font-size:20px; font-weight: 600">學經歷</a></li>
+        <li><a class="active" href="int.html"style="font-size:20px; font-weight: 600">興趣</a></li>
+        <li><a href="more.html"style="font-size:20px; font-weight: 600">更多</a></li>
+    </ul>
+    </div>
+    <div class="row">
+        <div class="leftcolumn"> 
+            <div class="box">
+                <img src="206801.jpg" alt="pic" width="250" height="250" class="cen">
+        
+            </div>
+        </div> 
+        <div class="rightcolumn">
+            <div class="box">
+                <p class="p2" style="font-size:22px">　　十年前迷上棒球，在高中也加入了社團球隊，完整了熱血的青春。在大學時就沒再加乙組校隊了，反倒是改打壘球，繼續在紅土與草皮間奔跑。司職外野手，現在偶爾在球隊裡教球。壘球在這所學校屬極冷門的運動，如何讓這項運動以系為單位競技、繼續留在師大是相當困難的，我常跟別人說「壘球是屬於老人的運動」，競技強度不如棒球，門檻也不比棒球低，比如裝備花費不貲，似乎對同輩來說不怎麼吸引人。但總有一群人因為愛著棒球而加入這裡，我的責任便是與這些有憧憬的人們分享一些觀念、運動技能，讓他們也能實際感受這項運動的魅力。
+                    
+                </p>
+            </div>
+        </div>  
+    </div>
+    
+    
+    <div class="footer">© 2024 林允皓
+        
+    </div>
+</body>
+</html>
