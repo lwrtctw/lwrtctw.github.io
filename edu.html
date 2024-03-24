@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="1L.jpg">
+    <title>學經歷</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--字型-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--字型-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"><!--字型-->
+	<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Noto Sans TC", sans-serif;
+        margin: 0;
+    }   
+
+    .header {
+        background-color: #A3D1D1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background: #bebebe;  
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .p1 {
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }/*字型*/
+    .p2 {
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }/*內文字型*/
+
+
+    .leftcolumn {
+        float: left;
+        width: 34%;
+        
+        border: 10px solid white;
+    }
+
+    .centercolumn {
+        float: left;
+        width: 33%;
+        
+        border: 10px solid white;
+    }
+
+    .rightcolumn {
+        float: left;
+        width: 33%;
+        
+        border: 10px solid white;
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+           
+    .cen {
+        position: relative;  
+        left:25%;
+    }
+
+    .box{
+        background-color: #D1E9E9;
+        height: 200px;
+
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3C3C3C;
+        /*position: fixed;
+        top: 0;*/
+        width: 100%;
+    }
+
+    ul.a {
+        list-style-type:square ;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #005757;
+    }
+
+    .active {
+        background-color: #007979;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .centercolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="p1" style="text-align:center;font-size:80px ;">學經歷</h2>
+    </div>
+    <div>
+    <ul>
+        <li><a href="index.html" style="font-size:20px; font-weight: 600">首頁</a></li>
+        <li><a href="info.html"style="font-size:20px; font-weight: 600">基本資料</a></li>
+        <li><a class="active" href="edu.html"style="font-size:20px; font-weight: 600">學經歷</a></li>
+        <li><a href="int.html"style="font-size:20px; font-weight: 600">興趣</a></li>
+        <li><a href="more.html"style="font-size:20px; font-weight: 600">更多</a></li>
+    </ul>
+    </div>
+    <div class="row">
+        <div class="leftcolumn"> 
+           <div class="box">
+            <h1>就學歷程</h1>
+            <ul class="a" style="background: #D1E9E9;padding-left: 30px;font-size:20px ;" >
+                <li>國立臺灣師範大學地理學系（2020-）</li><br>
+                <li>國立彰化高中（2017-2020）</li><br>
+                <li>彰化縣立彰泰國中（2014-2017）</li><br>
+                <li>彰化縣立泰和國小（2008-2014）</li>
+                
+
+            </ul>
+           </div>
+        </div> 
+        
+        <div class="centercolumn"> 
+            
+            <div class="box">
+            <h1>實習經歷</h1>
+            <ul class="a" style="background:#D1E9E9;padding-left: 30px;font-size:20px ;" >
+                <li>鼎堅航太（2022/7-2022/8）</li><br>
+                <li>農業部林業保育署航測及遙測分署（2023/7-2023/8）</li>
+
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="box">
+            <h1>社團經歷</h1>
+            <ul class="a" style="background: #D1E9E9;padding-left: 30px;font-size:20px ;" >
+                <li>第25屆地理學系學會資訊股長（2021/8-2022/7）</li><br>
+                <li>第26屆地理學系學會會員代表（2022/8-2023/7）</li>
+            </ul>
+            </div>
+        </div>  
+    </div>
+    
+    
+    <div class="footer">© 2024 林允皓
+        
+    </div>
+</body>
+</html>
