@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="1L.jpg">
+    <title>更多資訊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--字型-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--字型-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet"><!--字型-->
+	<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    a:hover, a:visited, a:link, a:active {text-decoration: none;}
+
+    body {
+        font-family: "Noto Sans TC", sans-serif;
+        margin: 0;
+    }   
+
+    .header {
+        background-color: #A3D1D1;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background: #bebebe;  
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .p1 {
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }/*字型*/
+    .p2 {
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }/*內文字型*/
+
+
+    /*.row {
+        float: left;
+        width: 100%;
+        height: 300px;
+        border: 10px solid red;
+        position: relative;
+    }*/
+
+
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+           
+    .pos1 {
+        position: relative;  
+        left:44%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pos2 {
+        text-align: center;
+        
+    }
+
+    .leftbox{
+        float: left;
+        margin-left: 25%;
+       
+        width: 25%;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      
+
+    }
+
+    .rightbox{
+        float: left;
+        margin-right: 30%;
+        
+        width: 20%;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+
+    }
+
+    .relative {
+        position: relative;
+        top: 25px;
+        
+    }
+
+    div>a {
+        font-size: 20px;
+        top: 10px;
+    }
+
+    div>a:link {
+        background-color: black;
+        color: white;
+    }
+    div>a:visited{
+        background-color: #5B5B5B;
+        color: white;
+    }
+
+
+    div>a:hover{
+        background-color: #007979;
+        color: white;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3C3C3C;
+        /*position: fixed;
+        top: 0;*/
+        width: 100%;
+    }
+
+    ul.a {
+        list-style-type:square ;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #005757;
+    }
+
+    .active {
+        background-color: #007979;
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .leftbox,.rightbox {
+            width: 100%;
+            margin-left: 0;
+            padding: 0;
+        }
+    }
+
+    
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="p1" style="text-align:center;font-size:80px ;">更多資訊</h2>
+    </div>
+    <div>
+    <ul>
+        <li><a href="index.html" style="font-size:20px; font-weight: 600">首頁</a></li>
+        <li><a href="info.html"style="font-size:20px; font-weight: 600">基本資料</a></li>
+        <li><a href="edu.html"style="font-size:20px; font-weight: 600">學經歷</a></li>
+        <li><a href="int.html"style="font-size:20px; font-weight: 600">興趣</a></li>
+        <li><a class="active" href="more.html"style="font-size:20px; font-weight: 600">更多</a></li>
+    </ul>
+    </div>
+    <div class="row">
+        <div class="leftbox" style="height: 300px;" >
+            <div style="height: 33%;">
+                <img src="email.png" style="width: 60px;" class="pos1">  
+            </div>
+            <div style="height: 33%;">
+                <img src="facebook.png" style="width: 60px;" class="pos1">
+            </div>
+            <div style="height: 33%;">
+                <img src="instagram.png" style="width: 60px;" class="pos1">
+            </div>
+
+        </div>
+        <div class="rightbox" style="height: 300px;">
+            <div class="pos2" style="height: 33%;">
+                <a class="relative" href="mailto:0123kan@gmail.com">0123kan@gmail.com</a>
+            </div>
+            <div class="pos2" style="height: 33%;">
+                <a class="relative" href="https://www.facebook.com/kanlin0123/">林允皓</a>
+            </div>
+            <div class="pos2" style="height: 33%;">
+                <a class="relative" href="https://www.instagram.com/y.h.lin123 ">林允皓(@y.h.lin123)</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">© 2024 林允皓
+        
+    </div>
+</body>
+</html>
